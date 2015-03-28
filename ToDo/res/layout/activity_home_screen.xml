@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.yaron.todo.MainActivity" >
+    
+    	<RelativeLayout 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="50dp"
+    	    android:background="@color/blue" >
+
+    		<TextView
+    		    android:id="@+id/txtv_id"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:text="ToDo List"
+    		    android:layout_marginLeft="10dp"
+    		    android:layout_marginTop="5dp"
+    		    android:textColor="@color/white"
+    		    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    		<Button
+    		    android:id="@+id/btn_add"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignParentRight="true"
+    		    android:layout_alignParentTop="true"
+    		    android:alpha="0.5"
+    		    android:paddingLeft="20dp"
+    		    android:paddingRight="20dp"
+    		    android:text="+" />
+    	    
+    	</RelativeLayout>
+    	
+    	<RelativeLayout 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="fill_parent"
+    	    android:padding="18px"
+    	    android:layout_marginTop="50dp" >
+
+    		<ImageButton
+    		    android:id="@+id/imgb_blue"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignParentLeft="true"
+    		    android:layout_alignParentTop="true"
+    		    android:background="@color/white"
+    		    android:src="@drawable/blue_circle_button" />
+
+    		<ImageButton
+    		    android:id="@+id/imgb_orange"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignLeft="@+id/imgb_purple"
+    		    android:layout_centerVertical="true"
+    		    android:background="@color/white"
+    		    android:src="@drawable/orange_circle_button" />
+
+    		<ImageButton
+    		    android:id="@+id/imgb_purple"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignParentRight="true"
+    		    android:layout_alignTop="@+id/imgb_blue"
+    		    android:background="@color/white"
+    		    android:src="@drawable/purple_circle_button" />
+
+    		<ImageButton
+    		    android:id="@+id/imgb_green"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignLeft="@+id/imgb_blue"
+    		    android:layout_alignTop="@+id/imgb_orange"
+    		    android:background="@color/white"
+    		    android:src="@drawable/green_circle_button" />
+
+    		<ImageButton
+    		    android:id="@+id/imgb_gray"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignLeft="@+id/imgb_orange"
+    		    android:layout_alignTop="@+id/imgb_red"
+    		    android:background="@color/white"
+    		    android:src="@drawable/gray_circle_button" />
+
+    		<ImageButton
+    		    android:id="@+id/imgb_red"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignLeft="@+id/imgb_green"
+    		    android:layout_below="@+id/imgb_green"
+    		    android:layout_marginTop="17dp"
+    		    android:background="@color/white"
+    		    android:src="@drawable/red_circle_button" />
+    	    
+    	</RelativeLayout>
+
+</RelativeLayout>

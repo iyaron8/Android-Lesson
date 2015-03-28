@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/white" >
+        
+    	<RelativeLayout 
+    	    android:id="@+id/relativeLayout1"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="50dp"
+    	    android:background="@color/blue">
+
+    		<TextView
+    		    android:id="@+id/txtv_id"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_marginLeft="10dp"
+    		    android:layout_marginTop="5dp"
+    		    android:text="Edit"
+    		    android:textAppearance="?android:attr/textAppearanceLarge"
+    		    android:textColor="@color/white" />
+    		
+    		<Button
+    		    android:id="@+id/btn_delete_current"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignParentBottom="true"
+    		    android:layout_toLeftOf="@+id/btn_send"
+    		    android:layout_marginRight="6px"
+    		    android:text="Delete" />
+
+    		<Button
+    		    android:id="@+id/btn_send"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignParentBottom="true"
+    		    android:layout_alignParentRight="true"
+    		    android:text="Save" />
+    	    
+    	</RelativeLayout>
+		<ScrollView 
+      		android:id="@+id/scrollview"
+    		tools:context="com.yaron.todo.MainActivity"
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:layout_marginTop="50dp"
+        	android:background="@color/white" >
+	    	<RelativeLayout
+	    	    android:id="@+id/relativeLayout2"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="match_parent"
+	    	    android:layout_alignParentLeft="true" >
+	
+	    	    <EditText
+	    	        android:id="@+id/etxt_todo_to_add"
+					android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_alignParentLeft="true"
+	    	        android:layout_alignParentRight="true"
+	    	        android:minHeight="70dp"
+	    		    android:textColor="@color/black"
+	    	        android:ems="10" >
+	    	    </EditText>
+	    	    
+	    	    <EditText
+	    	        android:id="@+id/etxt_location_geofence"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_alignParentLeft="true"
+	    	        android:layout_alignParentRight="true"
+	    	        android:layout_below="@+id/etxt_todo_to_add"
+	    	        android:ems="10"
+	    	        android:hint="Reminde me at location"
+	    	        android:textColor="@color/black" >
+					
+	    	    </EditText>
+	    	    
+	    	    <TextView
+	    	        android:id="@+id/textView1"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_alignBaseline="@+id/tglb_done"
+	    	        android:layout_alignBottom="@+id/tglb_done"
+	    	        android:layout_alignParentLeft="true"
+	    	        android:textColor="@color/black"
+	    	        android:layout_marginLeft="20dp"
+	    	        android:visibility="gone"
+	    	        android:text="Done" />
+	    	    
+	    	    <ToggleButton
+	    	        android:id="@+id/tglb_done"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_below="@+id/etxt_location_geofence"
+	    	        android:layout_marginLeft="16dp"
+	    	        android:layout_toRightOf="@+id/textView1"
+	    	        android:visibility="gone"
+	    	        android:text="Done" />
+	    	    
+	    	    <DatePicker
+	    	        android:id="@+id/dpcr_date_select"
+					android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_margin="0dp"
+	    	        android:paddingTop="20px"
+	    	        android:paddingLeft="20dp"
+	    	        android:paddingRight="20dp"
+	    	        android:background="@color/gray"
+	    	        android:layout_alignParentLeft="true"
+	    	        android:layout_alignParentRight="true"
+	    	        android:calendarViewShown="false"
+	    	        android:textColor="@color/black"
+	    	        android:layout_below="@+id/tglb_done" />
+	    	    
+	    	    <TimePicker
+	    	        android:id="@+id/tpcr_time_select"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_alignParentLeft="true"
+	    	        android:layout_alignParentRight="true"
+	    	        android:layout_margin="0dp"
+	    		    android:textColor="@color/black"
+	    	        android:background="@color/gray"
+	    	        android:layout_below="@+id/dpcr_date_select" />
+	
+	
+	    	</RelativeLayout>
+	    </ScrollView>
+	</RelativeLayout>

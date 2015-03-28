@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.example.geofencingtest&apos; to &apos;ToDo/src&apos;&#x0D;&#x0A;- Original project: &apos;GeofencingTest&apos;&#x0D;&#x0A;- Destination element: &apos;ToDo/src&apos;&#x0D;&#x0A;- Original element: &apos;GeofencingTest/src/com.example.geofencingtest&apos;" description="Copy package" destination="=ToDo/src" element1="/src&lt;com.example.geofencingtest" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1423494170810" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ToDo/res/drawable-hdpi/splash-screen.png&apos; to &apos;splash_screen.png&apos;" description="Rename resource &apos;splash-screen.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/drawable-hdpi/splash-screen.png" name="splash_screen.png" stamp="1419195512589" updateReferences="true"/>
+</session>
