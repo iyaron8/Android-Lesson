@@ -40,7 +40,7 @@
     	</RelativeLayout>
 		<ScrollView 
       		android:id="@+id/scrollview"
-    		tools:context="com.yaron.todo.MainActivity"
+    		tools:context="com.yl.todo.MainActivity"
         	android:layout_width="fill_parent" 
         	android:layout_height="fill_parent"
         	android:layout_marginTop="50dp"
